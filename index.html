@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="tr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- YENİ EKLENDİ: Dinamik Tarayıcı İkonu (Favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23ff6600%22/><text x=%2250%22 y=%2250%22 font-family=%22Arial%22 font-weight=%22bold%22 font-size=%2250%22 fill=%22white%22 dominant-baseline=%22central%22 text-anchor=%22middle%22>DM</text></svg>">
+    
+    <!-- GELİŞMİŞ SEO VE META TAG SİSTEMİ -->
+    <title>DijitalMuhbir - Oyun, Donanım ve Teknoloji Haberleri</title>
+    <meta name="description" content="DijitalMuhbir: En güncel oyun haberleri, donanım incelemeleri, teknoloji gelişmeleri ve oyun çıkış tarihleri rehberi.">
+    <meta name="keywords" content="dijitalmuhbir, oyun haberleri, oyun incelemeleri, donanım, teknoloji, ekran kartı, playstation, xbox, pc oyunları, çıkış tarihleri">
+    <meta name="author" content="DijitalMuhbir">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="Turkish">
+    <link rel="canonical" href="https://www.dijitalmuhbir.com/">
+
+    <!-- YENİ EKLENDİ: Google Schema.org JSON-LD Yapısal Verisi (SEO Hızlandırma) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsMediaOrganization",
+      "name": "DijitalMuhbir",
+      "url": "https://www.dijitalmuhbir.com/",
+      "logo": "https://www.dijitalmuhbir.com/logo.png",
+      "sameAs": [
+        "https://x.com/helakres"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "DijitalMuhbir",
+      "url": "https://www.dijitalmuhbir.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.dijitalmuhbir.com/#search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- OPEN GRAPH (Sosyal Medya Paylaşımları İçin) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.dijitalmuhbir.com/">
+    <meta property="og:title" content="DijitalMuhbir - Oyun, Donanım ve Teknoloji Haberleri">
+    <meta property="og:description" content="En güncel oyun haberleri, donanım incelemeleri ve teknoloji dünyası.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:site_name" content="DijitalMuhbir">
+
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.dijitalmuhbir.com/">
+    <meta name="twitter:title" content="DijitalMuhbir - Oyun & Donanım Haber Portalı">
+    <meta name="twitter:description" content="En güncel oyun haberleri, donanım incelemeleri ve teknoloji dünyası.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=1200&auto=format&fit=crop">
+    <meta name="twitter:creator" content="@helakres">
+
+    <!-- Tailwind CSS (CDN) + Typography Plugin for Article Styling -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    
+    <!-- FontAwesome (İkonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Twitter/X Embed Widget Script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-yellow': '#b8a632',
+                        'brand-dark': '#1a202c',
+                        'badge-dark': '#1e2532',
+                        'dark-bg': '#0f1217',
+                        'dark-card': '#1a202c',
+                        'dark-border': '#2d3748'
+                    }
+                }
+            }
+        }
+
+        // ==========================================
+        // GÜVENLİK: KAYNAK KODU VE GELİŞTİRİCİ ARAÇLARI ENGELLEME
+        // ==========================================
+        document.addEventListener('contextmenu', event => event.preventDefault()); 
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) { return false; }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
+        };
+    </script>
+
+    <style>
+        .img-hover-zoom:hover img { transform: scale(1.05); }
+        .line-clamp-2 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .line-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+        
+        /* Editör ve Modal Scrollbar Özelleştirme - Tema Duyarlı */
+        @media (hover: hover) and (pointer: fine) {
+            ::-webkit-scrollbar { width: 8px; }
+            .dark ::-webkit-scrollbar-track { background: #0f1217; }
+            .dark ::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px;}
+            .dark ::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+            html:not(.dark) ::-webkit-scrollbar-track { background: #f3f4f6; }
+            html:not(.dark) ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px;}
+            html:not(.dark) ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+        }
+        
+        #edit-content:empty:before { content: attr(placeholder); color: #6b7280; pointer-events: none; display: block; }
+        #edit-content img { max-width: 100%; border-radius: 0.5rem; margin-top: 1rem; margin-bottom: 1rem; height: auto; display: block; }
+        #edit-content iframe { width: 100%; aspect-ratio: 16/9; border-radius: 0.5rem; margin-top: 1rem; margin-bottom: 1rem; }
+        
+        #detail-content p { font-size: 15px !important; line-height: 1.7 !important; margin-bottom: 1rem !important; }
+        #detail-content h2, #detail-content h3, #detail-content h4 { font-weight: 800 !important; margin-top: 1.5rem !important; margin-bottom: 0.75rem !important; }
+        
+        .dark #detail-content p { color: #d1d5db !important; }
+        .dark #detail-content h2, .dark #detail-content h3, .dark #detail-content h4 { color: #f3f4f6 !important; }
+        html:not(.dark) #detail-content p { color: #374151 !important; }
+        html:not(.dark) #detail-content h2, html:not(.dark) #detail-content h3, html:not(.dark) #detail-content h4 { color: #111827 !important; }
+
+        @media (min-width: 768px) { #detail-content p { font-size: 16px !important; } }
+        #detail-content img { margin-top: 1.5rem !important; margin-bottom: 1.5rem !important; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2); }
+        
+        #detail-content iframe { width: 100% !important; aspect-ratio: 16 / 9 !important; height: auto !important; margin-top: 1.5rem !important; margin-bottom: 1.5rem !important; border-radius: 0.5rem; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2); display: block; max-width: 100%; }
+        .twitter-tweet { margin-left: auto !important; margin-right: auto !important; }
+
+        @keyframes blink { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.9); } }
+        .animate-blink { animation: blink 2s infinite ease-in-out; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-dark-bg dark:text-gray-300 antialiased font-sans flex flex-col min-h-screen transition-colors duration-300">
+
+    <!-- ========================================== -->
+    <!-- TAM SAYFA YÜKLEME EKRANI (GLOBAL LOADER) -->
+    <!-- ========================================== -->
+    <div id="global-loader" class="fixed inset-0 z-[9999] bg-white dark:bg-[#0f1217] flex items-center justify-center transition-opacity duration-150">
+        <div class="flex flex-col items-center">
+            <i class="fa-solid fa-circle-notch fa-spin text-4xl text-[#ff6600] mb-6"></i>
+            <div class="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white flex items-center justify-center gap-2">
+                <div class="bg-[#ff6600] text-white dark:text-dark-bg font-black px-1.5 py-0.5 rounded text-lg leading-none shadow-sm flex items-center justify-center">DM</div>
+                <span>Dijital<span class="text-[#ff6600]">Muhbir</span></span>
+            </div>
+            <p class="text-xs text-gray-500 mt-2 font-semibold tracking-widest uppercase">YÜKLENİYOR</p>
+        </div>
+    </div>
+
+    <!-- Üst Menü (Navbar) -->
+    <header class="bg-white border-b border-gray-200 dark:bg-dark-card dark:border-dark-border text-gray-800 dark:text-white shadow-xl sticky top-0 z-50 transition-colors duration-300">
+        <div class="max-w-[1100px] mx-auto px-4 flex justify-between items-center gap-4 w-full h-16 relative">
+            
+            <a href="#" onclick="window.filterCategory(''); return false;" class="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white flex items-center gap-2 shrink-0 group transition-colors">
+                <div class="bg-[#ff6600] text-white dark:text-dark-bg font-black px-1.5 py-0.5 rounded text-lg leading-none shadow-sm flex items-center justify-center group-hover:bg-orange-500 transition-colors">DM</div>
+                <span>Dijital<span class="text-[#ff6600]">Muhbir</span></span>
+            </a>
+            
+            <!-- Navigasyon (Kategori Filtreleme) -->
+            <!-- GÜNCELLENDİ: id atanarak menü aktifliğinin JS ile kontrol edilmesi sağlandı -->
+            <nav class="hidden lg:flex space-x-3 xl:space-x-5 text-[14px] xl:text-base font-bold items-center justify-center flex-grow">
+                <a href="#" id="nav-btn-oyun" onclick="window.filterCategory('Oyun'); return false;" class="nav-link text-gray-600 hover:text-red-500 dark:text-gray-200 dark:hover:text-red-500 transition-colors whitespace-nowrap">Oyun</a>
+                <a href="#" id="nav-btn-donanim" onclick="window.filterCategory('Donanım'); return false;" class="nav-link text-gray-600 hover:text-red-500 dark:text-gray-200 dark:hover:text-red-500 transition-colors whitespace-nowrap">Donanım</a>
+                <a href="#" id="nav-btn-teknoloji" onclick="window.filterCategory('Teknoloji'); return false;" class="nav-link text-gray-600 hover:text-red-500 dark:text-gray-200 dark:hover:text-red-500 transition-colors whitespace-nowrap">Teknoloji</a>
+                <a href="#" id="nav-btn-inceleme" onclick="window.filterCategory('İnceleme'); return false;" class="nav-link text-gray-600 hover:text-red-500 dark:text-gray-200 dark:hover:text-red-500 transition-colors whitespace-nowrap">İnceleme</a>
+                <a href="#" id="nav-btn-upcoming" onclick="window.showView('upcoming'); return false;" class="nav-link text-gray-600 hover:text-red-500 dark:text-gray-200 dark:hover:text-red-500 transition-colors whitespace-nowrap">Çıkış Tarihleri</a>
+                
+                <button id="btn-admin-panel" onclick="window.showView('admin')" class="hidden bg-brand-yellow text-white dark:text-dark-bg px-2 py-1 rounded text-xs font-bold hover:bg-yellow-500 transition-colors flex items-center gap-1.5 whitespace-nowrap">
+                    <i class="fa-solid fa-gear"></i> Yönetim
+                </button>
+            </nav>
+
+            <div class="flex items-center gap-3 shrink-0">
+                <div class="relative hidden md:block">
+                    <input type="text" id="search-input" oninput="window.handleSearch(this.value)" placeholder="Haber ara..." class="bg-gray-100 border border-gray-300 text-gray-900 focus:border-red-500 dark:bg-[#2d3748] dark:border-gray-600 text-sm dark:text-white px-3 py-1.5 rounded-full focus:outline-none dark:focus:border-red-500 w-36 lg:w-48 transition-all">
+                    <i class="fa-solid fa-search absolute right-3 top-2 text-gray-400 text-sm"></i>
+                </div>
+                
+                <div id="cloud-status-badge" class="flex items-center gap-1.5 px-2 py-1 rounded-full bg-red-100 text-red-600 dark:bg-red-950/40 dark:text-red-400 text-[10px] font-bold tracking-wide transition-all shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-red-500 animate-blink block" id="cloud-status-dot"></span>
+                    <span class="hidden sm:inline" id="cloud-status-text">Bağlanıyor</span>
+                </div>
+
+                <button onclick="window.toggleTheme()" class="text-gray-500 hover:text-[#ff6600] dark:text-gray-400 dark:hover:text-white transition-colors" title="Tema Değiştir">
+                    <i id="theme-icon" class="fa-solid fa-sun text-lg"></i>
+                </button>
+                
+                <button onclick="window.toggleMobileMenu()" class="lg:hidden text-gray-500 hover:text-[#ff6600] dark:text-gray-400 dark:hover:text-white text-xl transition-colors"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+
+        <!-- Mobil Açılır Menü -->
+        <div id="mobile-dropdown" class="hidden absolute top-16 left-0 w-full bg-white dark:bg-dark-card border-b border-gray-200 dark:border-dark-border shadow-2xl lg:hidden flex-col z-50">
+            <div class="px-4 py-3 border-b border-gray-100 dark:border-gray-800 md:hidden">
+                <div class="relative w-full">
+                    <input type="text" oninput="window.handleSearch(this.value)" placeholder="Haber ara..." class="w-full bg-gray-100 border border-gray-300 text-gray-900 focus:border-[#ff6600] dark:bg-[#2d3748] dark:border-gray-600 text-sm dark:text-white px-3 py-2.5 rounded-full focus:outline-none dark:focus:border-[#ff6600] transition-all">
+                    <i class="fa-solid fa-search absolute right-4 top-3 text-gray-400 text-sm"></i>
+                </div>
+            </div>
+            
+            <a href="#" onclick="window.filterCategory('Oyun'); return false;" class="block px-4 py-3.5 border-b border-gray-100 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-[#2d3748] hover:text-[#ff6600] dark:hover:text-[#ff6600] font-bold transition-colors">Oyun</a>
+            <a href="#" onclick="window.filterCategory('Donanım'); return false;" class="block px-4 py-3.5 border-b border-gray-100 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-[#2d3748] hover:text-[#ff6600] dark:hover:text-[#ff6600] font-bold transition-colors">Donanım</a>
+            <a href="#" onclick="window.filterCategory('Teknoloji'); return false;" class="block px-4 py-3.5 border-b border-gray-100 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-[#2d3748] hover:text-[#ff6600] dark:hover:text-[#ff6600] font-bold transition-colors">Teknoloji</a>
+            <a href="#" onclick="window.filterCategory('İnceleme'); return false;" class="block px-4 py-3.5 border-b border-gray-100 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-[#2d3748] hover:text-[#ff6600] dark:hover:text-[#ff6600] font-bold transition-colors">İnceleme</a>
+            <a href="#" onclick="window.showView('upcoming'); return false;" class="block px-4 py-3.5 border-b border-gray-100 dark:border-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-[#2d3748] hover:text-[#ff6600] dark:hover:text-[#ff6600] font-bold transition-colors">Çıkış Tarihleri</a>
+            
+            <button id="btn-admin-panel-mobile" onclick="window.showView('admin')" class="hidden w-full text-left px-4 py-3.5 bg-brand-yellow text-white dark:text-dark-bg font-extrabold hover:bg-yellow-500 transition-colors">
+                <i class="fa-solid fa-gear mr-1"></i> Yönetim Paneli
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-[1100px] mx-auto px-4 pt-0 pb-6 flex-grow w-full">
+        
+        <!-- ======================= -->
+        <!-- GÖRÜNÜM: ANA SAYFA (HOME) -->
+        <!-- ======================= -->
+        <div id="view-home">
+            <section class="sticky top-16 z-40 bg-gray-50 dark:bg-dark-bg pt-2 pb-4 mb-4 border-b border-gray-200 dark:border-dark-border shadow-sm transition-colors duration-300" id="slider-container">
+            </section>
+
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Sol Ana Akış -->
+                <div class="w-full lg:w-8/12">
+                    <div class="border-b-2 border-red-500 mb-4 pb-2 flex justify-between items-end">
+                        <h2 id="feed-title" class="text-base font-bold text-gray-900 dark:text-gray-100 uppercase flex items-center gap-2 transition-colors">
+                            <i class="fa-solid fa-bolt text-red-500"></i> SON HABERLER
+                        </h2>
+                        <a href="#" onclick="window.filterCategory(''); return false;" class="text-xs font-semibold text-gray-500 hover:text-red-500 dark:text-gray-400 dark:hover:text-white transition-colors relative z-30">Tümünü Gör <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                    </div>
+                    
+                    <div class="flex flex-col gap-4" id="news-feed-container">
+                    </div>
+                    
+                    <button id="load-more-btn" onclick="window.loadMore()" class="w-full bg-white hover:bg-gray-100 border border-gray-200 text-gray-800 dark:bg-dark-card dark:hover:bg-[#2d3748] dark:border-dark-border dark:text-gray-300 font-bold py-3 rounded-lg transition-colors mt-6 text-sm shadow-sm hidden">
+                        Daha Fazla Haber Yükle
+                    </button>
+                </div>
+
+                <!-- Sağ Yan Panel -->
+                <aside class="w-full lg:w-4/12 flex flex-col gap-6">
+                    <!-- Popüler Haberler -->
+                    <div>
+                        <div class="border-b-2 border-brand-yellow mb-4 pb-2 flex justify-between items-end">
+                            <h2 class="text-base font-bold text-gray-900 dark:text-gray-100 uppercase flex items-center gap-2 transition-colors">
+                                <i class="fa-solid fa-fire text-brand-yellow"></i> Popüler Haberler
+                            </h2>
+                        </div>
+                        <div class="flex flex-col gap-3" id="popular-news-container"></div>
+                    </div>
+
+                    <!-- SOSYAL MEDYA ALANI -->
+                    <div>
+                        <div class="border-b-2 border-[#1DA1F2] mb-4 pb-2 flex justify-between items-end">
+                            <h2 class="text-base font-bold text-gray-900 dark:text-gray-100 uppercase flex items-center gap-2 transition-colors">
+                                <i class="fa-solid fa-hashtag text-[#1DA1F2]"></i> Bizi Takip Edin
+                            </h2>
+                        </div>
+                        <div class="grid grid-cols-4 gap-3">
+                            <a href="https://x.com/helakres" target="_blank" class="bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 border border-gray-700 dark:border-gray-300 p-3 rounded-xl flex items-center justify-center transition-all hover:scale-105 shadow-sm" title="X (Twitter)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 1200 1227">
+                                    <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" target="_blank" class="bg-[#FF0000] text-white hover:bg-red-700 p-3 rounded-xl flex items-center justify-center transition-all hover:scale-105 shadow-sm" title="YouTube">
+                                <i class="fa-brands fa-youtube text-2xl"></i>
+                            </a>
+                            <a href="#" target="_blank" class="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white hover:opacity-90 p-3 rounded-xl flex items-center justify-center transition-all hover:scale-105 shadow-sm" title="Instagram">
+                                <i class="fa-brands fa-instagram text-2xl"></i>
+                            </a>
+                            <a href="#" target="_blank" class="bg-[#5865F2] text-white hover:bg-[#4752c4] p-3 rounded-xl flex items-center justify-center transition-all hover:scale-105 shadow-sm" title="Discord">
+                                <i class="fa-brands fa-discord text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ÇIKIŞ TARİHLERİ -->
+                    <div>
+                        <div class="border-b-2 border-red-500 mb-4 pb-2 flex justify-between items-end">
+                            <h2 class="text-base font-bold text-gray-900 dark:text-gray-100 uppercase flex items-center gap-2 transition-colors">
+                                <i class="fa-regular fa-calendar-days text-red-500"></i> Çıkış Tarihleri
+                            </h2>
+                            <span class="text-[10px] text-gray-500 font-bold tracking-wider">GÜNCEL LİSTE</span>
+                        </div>
+                        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border rounded-lg p-3 shadow-sm flex flex-col gap-2 transition-colors" id="upcoming-games-container"></div>
+                        <button onclick="window.showView('upcoming')" class="w-full mt-3 bg-red-50 hover:bg-red-100 text-red-700 dark:bg-red-900/30 dark:hover:bg-red-900/50 dark:text-red-400 font-bold py-2 rounded text-[11px] transition-colors border border-red-200 dark:border-red-800/50">TÜM ÇIKIŞ TARİHLERİNİ GÖR</button>
+                    </div>
+
+                    <!-- YENİ: İNCELEMELER PANELİ (Metacritic yerine eklendi) -->
+                    <div>
+                        <div class="border-b-2 border-gray-800 dark:border-gray-200 mb-4 pb-2 flex justify-between items-end">
+                            <h2 class="text-base font-black text-gray-900 dark:text-gray-100 uppercase transition-colors">
+                                İNCELEMELER
+                            </h2>
+                        </div>
+                        
+                        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border shadow-sm flex flex-col transition-colors overflow-hidden" id="sidebar-reviews-container">
+                            <!-- Yükleniyor... -->
+                            <div class="text-center py-6 text-gray-500 text-sm">İncelemeler yükleniyor...</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Reklam Alanı -->
+                    <div class="bg-gray-100 border border-dashed border-gray-300 text-gray-500 dark:bg-dark-card h-64 rounded-lg flex items-center justify-center dark:text-gray-600 dark:border-gray-700 relative overflow-hidden group cursor-pointer mt-2 transition-colors">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=400&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity">
+                        <div class="text-center relative z-10">
+                            <i class="fa-solid fa-ad text-3xl mb-2"></i>
+                            <p class="text-sm font-bold">Reklam Alanı<br>(300x250)</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- ======================= -->
+        <!-- GÖRÜNÜM: ÇIKIŞ TARİHLERİ -->
+        <!-- ======================= -->
+        <div id="view-upcoming" class="hidden">
+            <div class="bg-white dark:bg-dark-card rounded-xl shadow-sm border border-gray-200 dark:border-dark-border p-6 mt-4 transition-colors">
+                <div class="border-b-2 border-red-500 mb-6 pb-3 flex flex-col md:flex-row justify-between items-start md:items-end gap-2">
+                    <h2 class="text-2xl font-black text-gray-900 dark:text-white uppercase flex items-center gap-3">
+                        <i class="fa-regular fa-calendar-days text-red-500 text-3xl"></i> YAKLAŞAN OYUNLAR
+                    </h2>
+                    <span class="text-xs font-bold text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-[#2d3748] px-3 py-1 rounded">Editör tarafından güncellenen resmi tarihlerdir.</span>
+                </div>
+                <div id="upcoming-main-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 lg:gap-6"></div>
+            </div>
+        </div>
+
+        <!-- ======================= -->
+        <!-- GÖRÜNÜM: HABER DETAYI -->
+        <!-- ======================= -->
+        <div id="view-article" class="hidden">
+            <div class="flex justify-center w-full">
+                <article class="w-full max-w-4xl bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border rounded-xl shadow-2xl overflow-hidden mx-auto mt-2 transition-colors duration-300">
+                    
+                    <div class="relative w-full h-[300px] lg:h-[420px]">
+                        <img id="detail-image" src="" alt="Haber Görseli" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent dark:from-dark-card dark:via-dark-bg/60"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-5 md:p-8 z-10">
+                            <h1 id="detail-title" class="text-xl md:text-2xl lg:text-3xl font-extrabold text-white mb-3 leading-tight drop-shadow-xl" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.9);">
+                                Haber Başlığı
+                            </h1>
+                            <div class="flex items-center gap-3 text-xs md:text-sm font-bold text-gray-300 dark:text-gray-400">
+                                <span id="detail-author">Yazar: <span class="text-[#ff6600]">Yazar Adı</span></span>
+                                <span class="text-gray-400 dark:text-gray-600">•</span>
+                                <span id="detail-comments-top" class="flex items-center gap-1"><i class="fa-solid fa-comments text-[#ff6600]"></i> <span class="text-white dark:text-gray-200">0</span> Yorum</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="p-5 md:p-8">
+                        <div class="flex flex-wrap items-center gap-3 text-xs mb-6 border-b border-gray-200 dark:border-gray-700 pb-4 transition-colors">
+                            <span id="detail-category" class="bg-[#ff6600] text-white font-bold px-3 py-1 rounded text-[11px] uppercase tracking-wider shadow-md">Kategori</span>
+                            <span id="detail-date" class="text-gray-500 dark:text-gray-400 font-semibold flex items-center gap-1.5"><i class="fa-regular fa-clock"></i> Tarih</span>
+                            
+                            <button id="detail-admin-edit-btn" class="hidden ml-auto bg-gray-100 hover:bg-gray-200 dark:bg-[#2d3748] dark:hover:bg-gray-700 text-blue-600 dark:text-blue-400 border border-blue-500/30 px-3 py-1.5 rounded text-[11px] font-bold tracking-wider transition-colors shadow-sm items-center gap-1.5">
+                                <i class="fa-solid fa-pen-to-square"></i> HABERİ DÜZENLE
+                            </button>
+                        </div>
+                        
+                        <div id="detail-content" class="text-gray-800 dark:text-gray-300 mb-10 transition-colors"></div>
+
+                        <div id="detail-review-score-container" class="hidden mb-10 transition-all duration-300"></div>
+
+                        <div class="border-t border-gray-200 dark:border-gray-700 pt-8 mb-10 transition-colors">
+                            <h3 class="text-lg font-extrabold text-gray-900 dark:text-gray-100 mb-4 flex items-center gap-2 transition-colors uppercase tracking-wide">
+                                <i class="fa-solid fa-layer-group text-[#ff6600]"></i> Diğer İçerikler
+                            </h3>
+                            <div id="detail-related-contents" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                        </div>
+
+                        <div class="border-t border-gray-200 dark:border-gray-700 pt-8 transition-colors">
+                            <h3 class="text-xl font-extrabold text-gray-900 dark:text-gray-100 mb-6 flex items-center gap-2 transition-colors">
+                                <i class="fa-solid fa-comments text-[#ff6600]"></i> Yorumlar (<span id="detail-comment-count-bottom">0</span>)
+                            </h3>
+                            <div id="comments-list" class="flex flex-col gap-4 mb-8"></div>
+                            
+                            <div class="bg-gray-50 border border-gray-200 dark:bg-dark-bg p-5 rounded-xl dark:border-dark-border transition-colors">
+                                <h4 class="text-sm font-bold text-gray-800 dark:text-gray-300 mb-4 uppercase tracking-wider transition-colors">Bu habere yorum yapın</h4>
+                                <div class="flex flex-col gap-3">
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                        <input type="text" id="comment-author-name" class="w-full bg-white border border-gray-300 text-gray-900 dark:bg-[#1a202c] dark:border-gray-700 dark:text-white rounded-lg p-3 text-sm focus:ring-1 focus:ring-[#ff6600] focus:border-[#ff6600] outline-none transition-colors" placeholder="Adınız / Rumuzunuz...">
+                                        <div class="text-[11px] text-gray-500 flex items-center">Küresel yorum topluluğumuza takma adınızla katılın!</div>
+                                    </div>
+                                    <textarea id="new-comment-text" rows="3" class="w-full bg-white border border-gray-300 text-gray-900 dark:bg-[#1a202c] dark:border-gray-700 dark:text-gray-200 rounded-lg p-3 text-sm focus:ring-1 focus:ring-[#ff6600] focus:border-[#ff6600] outline-none resize-y transition-colors" placeholder="Yorumunuzu buraya yazın..."></textarea>
+                                    <button onclick="window.addComment()" class="bg-[#ff6600] text-white px-6 py-2.5 rounded-lg font-bold hover:bg-orange-600 self-end text-sm transition-colors shadow-sm tracking-wide">Yorumu Gönder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- ======================= -->
+        <!-- GÖRÜNÜM: YÖNETİM PANELİ -->
+        <!-- ======================= -->
+        <div id="view-admin" class="hidden">
+            <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-dark-border rounded-xl shadow-xl p-6 mb-8 mt-6 transition-colors duration-300">
+                
+                <div class="flex flex-wrap border-b border-gray-200 dark:border-gray-700 mb-6 gap-2 transition-colors">
+                    <button id="admin-tab-news" onclick="window.switchAdminTab('news')" class="px-5 py-3 font-bold text-sm text-[#ff6600] border-b-2 border-[#ff6600] transition-colors focus:outline-none uppercase tracking-wide">
+                        <i class="fa-solid fa-newspaper mr-1"></i> Haberler
+                    </button>
+                    <button id="admin-tab-upcoming" onclick="window.switchAdminTab('upcoming')" class="px-5 py-3 font-bold text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200 border-b-2 border-transparent transition-colors focus:outline-none uppercase tracking-wide">
+                        <i class="fa-solid fa-calendar-days mr-1"></i> Çıkış Tarihleri
+                    </button>
+                </div>
+
+                <div id="admin-table-news-container">
+                    <div class="flex flex-wrap justify-between items-center mb-4 gap-4">
+                        <h2 class="text-xl font-bold text-gray-900 dark:text-white transition-colors"><i class="fa-solid fa-bolt text-[#ff6600]"></i> Haber Yönetimi</h2>
+                        <div class="flex gap-2 w-full sm:w-auto">
+                            <button onclick="window.openEditor()" class="flex-1 sm:flex-none justify-center bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 shadow-sm">
+                                <i class="fa-solid fa-plus"></i> Yeni Haber Ekle
+                            </button>
+                            <button onclick="window.openEditor(null, true)" class="flex-1 sm:flex-none justify-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 shadow-sm">
+                                <i class="fa-solid fa-star"></i> İnceleme Ekle
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700 transition-colors">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-gray-100 text-gray-600 dark:bg-[#2d3748] dark:text-gray-300 text-xs uppercase tracking-wider transition-colors">
+                                    <th class="p-4 font-bold">Görsel</th>
+                                    <th class="p-4 font-bold">Başlık</th>
+                                    <th class="p-4 font-bold">Kategori</th>
+                                    <th class="p-4 font-bold">Puan</th>
+                                    <th class="p-4 font-bold text-center">Görüntülenme</th>
+                                    <th class="p-4 font-bold">Tarih</th>
+                                    <th class="p-4 font-bold text-right">İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-news-list" class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-dark-card text-gray-800 dark:text-gray-300 transition-colors"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="admin-table-upcoming-container" class="hidden">
+                    <div class="flex flex-wrap justify-between items-center mb-4 gap-4">
+                        <h2 class="text-xl font-bold text-gray-900 dark:text-white transition-colors"><i class="fa-solid fa-calendar-days text-red-500"></i> Çıkış Tarihi Yönetimi</h2>
+                        <div class="flex gap-2 w-full sm:w-auto">
+                            <button onclick="window.openUpcomingEditor()" class="flex-1 sm:flex-none justify-center bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors flex items-center gap-2 shadow-sm">
+                                <i class="fa-solid fa-plus"></i> Çıkış Tarihi Ekle
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-700 transition-colors">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-gray-100 text-gray-600 dark:bg-[#2d3748] dark:text-gray-300 text-xs uppercase tracking-wider transition-colors">
+                                    <th class="p-4 font-bold">Görsel</th>
+                                    <th class="p-4 font-bold">Oyun İsmi</th>
+                                    <th class="p-4 font-bold">Çıkış Tarihi</th>
+                                    <th class="p-4 font-bold">Platform</th>
+                                    <th class="p-4 font-bold text-center">Sağ Panel</th>
+                                    <th class="p-4 font-bold text-right">İşlemler</th>
+                                </tr>
+                            </thead>
+                            <tbody id="admin-upcoming-list" class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-dark-card text-gray-800 dark:text-gray-300 transition-colors"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Alt Bilgi (Footer) -->
+    <footer class="bg-white border-t-2 border-[#ff6600] text-gray-600 dark:bg-dark-card dark:text-gray-500 py-8 mt-12 transition-colors duration-300">
+        <div class="max-w-[1100px] mx-auto px-4 text-center">
+            <div class="text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white flex items-center justify-center gap-2 mb-3 opacity-80 transition-colors">
+                <div class="bg-[#ff6600] text-white dark:text-dark-bg font-black px-1.5 py-0.5 rounded text-lg leading-none shadow-sm flex items-center justify-center transition-colors">DM</div>
+                <span>Dijital<span class="text-[#ff6600]">Muhbir</span></span>
+            </div>
+            <p class="text-sm mb-4">En güncel oyun, donanım ve teknoloji haberleri.</p>
+            <div class="border-t border-gray-200 dark:border-gray-800 pt-4 text-xs transition-colors">
+                <span onclick="window.toggleLogin()" class="cursor-pointer hover:text-[#ff6600] transition-colors" title="Giriş / Çıkış">&copy; 2026 DijitalMuhbir</span>. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <!-- ======================= -->
+    <!-- ÖZEL YÖNETİCİ GİRİŞ MODALI -->
+    <!-- ======================= -->
+    <div id="custom-login-modal" class="hidden fixed inset-0 bg-gray-900/80 dark:bg-black/90 z-[70] flex justify-center items-center px-4 backdrop-blur-sm">
+        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-gray-700 rounded-lg shadow-2xl w-full max-w-md flex flex-col overflow-hidden transition-colors">
+            <div class="flex justify-between items-center p-4 border-b border-gray-200 dark:border-gray-800 transition-colors">
+                <h3 class="text-gray-900 dark:text-white font-black text-[17px] tracking-wide flex items-center gap-2 transition-colors">
+                    <i class="fa-solid fa-lock text-[#ff6600]"></i> YÖNETİCİ GİRİŞİ
+                </h3>
+                <button onclick="window.closeLoginModal()" class="text-gray-500 hover:text-gray-900 dark:hover:text-white text-xl leading-none transition-colors">&times;</button>
+            </div>
+            <div class="p-6">
+                <p class="text-gray-600 dark:text-gray-400 text-[13px] mb-6 leading-relaxed transition-colors">
+                    Haber ekleme, düzenleme ve silme panelini aktifleştirmek için yönetici şifresini girin.
+                </p>
+                <div class="mb-2">
+                    <label class="block text-gray-600 dark:text-gray-500 text-[11px] uppercase font-bold mb-2 tracking-wider transition-colors">YÖNETİCİ ŞİFRESİ <span class="text-red-500">*</span></label>
+                    <input type="password" id="admin-password-input" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-3 text-sm focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600] dark:focus:border-[#ff6600] dark:focus:ring-[#ff6600] transition-colors" placeholder="••••••••" onkeypress="if(event.key === 'Enter') window.submitLogin()">
+                </div>
+            </div>
+            <div class="p-4 bg-gray-50 dark:bg-[#11151a] flex justify-end gap-3 border-t border-gray-200 dark:border-gray-800 transition-colors">
+                <button onclick="window.closeLoginModal()" class="px-5 py-2.5 bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-[#2d3748] dark:text-white text-[13px] font-bold rounded dark:hover:bg-gray-600 transition-colors">İPTAL</button>
+                <button onclick="window.submitLogin()" class="px-5 py-2.5 bg-[#ff6600] text-white text-[13px] font-bold rounded hover:bg-orange-600 transition-colors">GİRİŞ YAP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- ÖZEL HABER DÜZENLEME MODALI -->
+    <!-- ======================= -->
+    <div id="custom-editor-modal" class="hidden fixed inset-0 bg-gray-900/80 dark:bg-black/90 z-[80] flex justify-center items-start pt-6 md:pt-10 px-4 overflow-y-auto pb-10 backdrop-blur-sm">
+        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-gray-700 rounded-xl shadow-2xl w-full max-w-[850px] flex flex-col relative transition-colors">
+            <div class="flex justify-between items-center p-5 md:p-6 border-b border-gray-200 dark:border-gray-800 transition-colors">
+                <h3 id="editor-modal-title" class="text-gray-900 dark:text-white font-black text-[17px] tracking-wide flex items-center gap-2 uppercase transition-colors">
+                    <i class="fa-solid fa-pen-to-square text-[#ff6600]"></i> HABERİ GÜNCELLE
+                </h3>
+                <button onclick="window.closeEditor()" class="text-gray-500 hover:text-gray-900 dark:hover:text-white text-2xl leading-none transition-colors">&times;</button>
+            </div>
+            <div class="p-5 md:p-6 flex flex-col gap-5 md:gap-6">
+                <input type="hidden" id="edit-id">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+                    <div>
+                        <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold mb-2 tracking-wider transition-colors">HABER BAŞLIĞI <span class="text-red-500">*</span></label>
+                        <input type="text" id="edit-title" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-3 text-[13px] focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600] transition-colors" placeholder="Başlık giriniz...">
+                    </div>
+                    <div>
+                        <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold mb-2 tracking-wider transition-colors">KATEGORİ <span class="text-red-500">*</span></label>
+                        <select id="edit-category" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-3 text-[13px] focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600] transition-colors">
+                            <option value="Oyun">Oyun</option>
+                            <option value="Donanım">Donanım</option>
+                            <option value="Teknoloji">Teknoloji</option>
+                            <option value="İnceleme">İnceleme</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="edit-score-container" class="hidden grid-cols-1 md:grid-cols-2 gap-5 md:gap-6 border border-red-500/30 bg-red-500/5 rounded-lg p-4">
+                    <div>
+                        <label class="block text-red-700 dark:text-red-400 text-[11px] uppercase font-bold mb-2 tracking-wider transition-colors">İNCELEME PUANI (0 - 100) <span class="text-red-500">*</span></label>
+                        <input type="number" id="edit-score" min="0" max="100" class="w-full bg-white border border-red-300 text-gray-900 dark:bg-[#1a202c] dark:border-red-800 dark:text-white rounded-md p-3 text-[13px] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors" placeholder="Örn: 85">
+                        <p class="text-[10px] text-gray-500 mt-1">Yazının sonunda dev bir puan bloğu oluşturur.</p>
+                    </div>
+                    <div>
+                        <label class="block text-red-700 dark:text-red-400 text-[11px] uppercase font-bold mb-2 tracking-wider transition-colors">PUAN AÇIKLAMASI</label>
+                        <textarea id="edit-score-desc" rows="3" class="w-full bg-white border border-red-300 text-gray-900 dark:bg-[#1a202c] dark:border-red-800 dark:text-white rounded-md p-2 text-[12px] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors resize-y" placeholder="Editörümüzün tüm analizleri sonucu..."></textarea>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
+                    <div>
+                        <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold mb-2 tracking-wider transition-colors">YAZAR ADI <span class="text-red-500">*</span></label>
+                        <input type="text" id="edit-author" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-3 text-[13px] focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600] transition-colors" placeholder="Örn: Admin">
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold tracking-wider transition-colors">KAPAK GÖRSEL URL'Sİ</label>
+                            <button onclick="window.pickRandomImage()" class="text-[#ff6600] hover:text-[#e55c00] dark:hover:text-white text-[11px] font-medium transition-colors">Rastgele Görsel Seç</button>
+                        </div>
+                        <input type="text" id="edit-image" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-3 text-[13px] focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600] transition-colors" placeholder="https://...">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex justify-between items-center mb-2">
+                        <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold tracking-wider transition-colors">HABER ÖZETİ & İÇERİĞİ <span class="text-red-500">*</span></label>
+                        <span class="text-[#ff6600] text-[11px] font-bold">Görsel Editör Aktif</span>
+                    </div>
+                    <div class="bg-gray-100 border border-gray-300 border-b-0 dark:bg-[#2d3748] dark:border-gray-700 dark:border-b-0 rounded-t-md p-1.5 flex flex-wrap gap-1 items-center transition-colors">
+                        <button type="button" onmousedown="event.preventDefault(); window.execCmd('bold')" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-900 hover:bg-gray-200 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600 rounded transition-colors"><i class="fa-solid fa-bold"></i></button>
+                        <button type="button" onmousedown="event.preventDefault(); window.execCmd('italic')" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-900 hover:bg-gray-200 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600 rounded transition-colors"><i class="fa-solid fa-italic"></i></button>
+                        <button type="button" onmousedown="event.preventDefault(); window.execCmd('underline')" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-gray-900 hover:bg-gray-200 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600 rounded transition-colors"><i class="fa-solid fa-underline"></i></button>
+                        <div class="w-px h-5 bg-gray-300 dark:bg-gray-600 mx-1"></div>
+                        <button type="button" onmousedown="event.preventDefault(); window.execCmd('formatBlock', 'H2')" class="px-2 h-8 flex items-center justify-center text-gray-600 font-bold hover:text-gray-900 hover:bg-gray-200 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600 rounded transition-colors">H2</button>
+                        <button type="button" onmousedown="event.preventDefault(); window.execCmd('formatBlock', 'P')" class="px-2 h-8 flex items-center justify-center text-gray-600 font-bold hover:text-gray-900 hover:bg-gray-200 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-600 rounded transition-colors">P</button>
+                        <div class="w-px h-5 bg-gray-300 dark:bg-gray-600 mx-1"></div>
+                        <button type="button" onmousedown="event.preventDefault(); window.insertImagePrompt()" class="px-3 h-8 flex items-center gap-1.5 text-blue-500 hover:text-white hover:bg-blue-600 dark:text-blue-400 rounded transition-colors font-semibold text-xs"><i class="fa-solid fa-image text-sm"></i> Resim</button>
+                        <button type="button" onmousedown="event.preventDefault(); window.insertYoutube()" class="px-3 h-8 flex items-center gap-1.5 text-red-500 hover:text-white hover:bg-red-600 dark:text-red-400 rounded transition-colors font-semibold text-xs"><i class="fa-brands fa-youtube text-sm"></i> Video</button>
+                    </div>
+                    <div id="edit-content" contenteditable="true" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-gray-200 rounded-b-md p-4 text-[14px] leading-relaxed focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600] transition-colors overflow-y-auto min-h-[250px] max-h-[400px]" placeholder="Yazmaya başlayın veya YouTube / X (Twitter) linkini buraya yapıştırın (Ctrl+V)..."></div>
+                </div>
+            </div>
+            
+            <div class="p-5 md:p-6 bg-gray-50 dark:bg-[#11151a] flex justify-end gap-3 border-t border-gray-200 dark:border-gray-800 rounded-b-xl transition-colors">
+                <button onclick="window.closeEditor()" class="px-6 py-2.5 bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-[#2d3748] dark:text-white text-[12px] font-bold tracking-wider rounded dark:hover:bg-gray-600 transition-colors">İPTAL ET</button>
+                <button onclick="window.saveArticle()" id="btn-save-article" class="px-6 py-2.5 bg-[#059669] text-white text-[12px] font-bold tracking-wider rounded hover:bg-green-700 transition-colors shadow-lg shadow-green-900/20">KAYDET</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- YENİ: ÇIKIŞ TARİHİ MANUEL EKLEME MODALI -->
+    <!-- ======================= -->
+    <div id="custom-upcoming-modal" class="hidden fixed inset-0 bg-gray-900/80 dark:bg-black/90 z-[85] flex justify-center items-center pt-6 md:pt-10 px-4 overflow-y-auto pb-10 backdrop-blur-sm">
+        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-gray-700 rounded-xl shadow-2xl w-full max-w-[600px] flex flex-col relative transition-colors">
+            <div class="flex justify-between items-center p-5 md:p-6 border-b border-gray-200 dark:border-gray-800 transition-colors">
+                <h3 id="upcoming-modal-title" class="text-gray-900 dark:text-white font-black text-[17px] tracking-wide flex items-center gap-2 uppercase transition-colors">
+                    <i class="fa-solid fa-calendar-plus text-red-500"></i> ÇIKIŞ TARİHİ GÜNCELLE
+                </h3>
+                <button onclick="window.closeUpcomingEditor()" class="text-gray-500 hover:text-gray-900 dark:hover:text-white text-2xl leading-none transition-colors">&times;</button>
+            </div>
+            <div class="p-5 md:p-6 flex flex-col gap-4">
+                <input type="hidden" id="upcoming-edit-id">
+                <div>
+                    <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold mb-1.5 tracking-wider transition-colors">OYUN İSMİ <span class="text-red-500">*</span></label>
+                    <input type="text" id="upcoming-edit-name" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-2.5 text-[13px] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors" placeholder="Örn: Grand Theft Auto VI">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold mb-1.5 tracking-wider transition-colors">ÇIKIŞ TARİHİ (METİN) <span class="text-red-500">*</span></label>
+                        <input type="text" id="upcoming-edit-date" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-2.5 text-[13px] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors" placeholder="Örn: 2026 Sonbahar veya 15 Kasım 2026">
+                    </div>
+                    <div>
+                        <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold mb-1.5 tracking-wider transition-colors">PLATFORMLAR <span class="text-red-500">*</span></label>
+                        <input type="text" id="upcoming-edit-platforms" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-2.5 text-[13px] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors" placeholder="Örn: PC, PS5, Xbox Series X">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold mb-1.5 tracking-wider transition-colors">YÖNLENDİRME LİNKİ (URL) <span class="text-red-500">*</span></label>
+                        <input type="text" id="upcoming-edit-url" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-2.5 text-[13px] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors" placeholder="Tıklanınca gidilecek site url...">
+                    </div>
+                    <div>
+                        <label class="block text-gray-600 dark:text-gray-400 text-[11px] uppercase font-bold mb-1.5 tracking-wider transition-colors">KAPAK GÖRSELİ (URL) <span class="text-red-500">*</span></label>
+                        <input type="text" id="upcoming-edit-image" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-dark-bg dark:border-gray-700 dark:text-white rounded-md p-2.5 text-[13px] focus:outline-none focus:border-red-500 focus:ring-1 focus:ring-red-500 transition-colors" placeholder="Oyun afiş url...">
+                    </div>
+                </div>
+                <div class="mt-2 flex items-center">
+                    <input type="checkbox" id="upcoming-edit-sidebar" class="w-4 h-4 text-red-600 bg-gray-100 border-gray-300 rounded focus:ring-red-500 dark:focus:ring-red-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer">
+                    <label for="upcoming-edit-sidebar" class="ml-2 text-sm font-bold text-gray-800 dark:text-gray-200 cursor-pointer transition-colors">Ana Sayfa Sağ Panelde Gösterilsin mi?</label>
+                </div>
+            </div>
+            <div class="p-5 bg-gray-50 dark:bg-[#11151a] flex justify-end gap-3 border-t border-gray-200 dark:border-gray-800 rounded-b-xl transition-colors">
+                <button onclick="window.closeUpcomingEditor()" class="px-6 py-2.5 bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-[#2d3748] dark:text-white text-[12px] font-bold tracking-wider rounded dark:hover:bg-gray-600 transition-colors">İPTAL ET</button>
+                <button onclick="window.saveUpcomingGame()" id="btn-save-upcoming" class="px-6 py-2.5 bg-red-600 text-white text-[12px] font-bold tracking-wider rounded hover:bg-red-700 transition-colors shadow-lg shadow-red-900/20">KAYDET</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======================= -->
+    <!-- ÖZEL SİLME ONAY MODALI -->
+    <!-- ======================= -->
+    <div id="custom-delete-modal" class="hidden fixed inset-0 bg-gray-900/80 dark:bg-black/90 z-[90] flex justify-center items-center px-4 backdrop-blur-sm">
+        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-gray-700 rounded-2xl shadow-2xl w-full max-w-[340px] flex flex-col items-center p-8 text-center transition-colors">
+            <div class="w-16 h-16 rounded-full border border-red-500/40 bg-red-500/10 flex items-center justify-center mb-5">
+                <i class="fa-solid fa-trash-can text-[#ff4444] text-2xl"></i>
+            </div>
+            <h3 class="text-gray-900 dark:text-white font-black text-[16px] tracking-wide mb-2 uppercase transition-colors">İÇERİĞİ SİLMEK İSTİYOR MUSUNUZ?</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-[13px] mb-8 leading-relaxed transition-colors">Bu kayıt kalıcı olarak silinecek ve bu işlem geri alınamaz.</p>
+            <div class="flex gap-3 w-full">
+                <button onclick="window.closeDeleteModal()" class="flex-1 py-3 bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-[#2d3748] dark:text-white text-[12px] font-bold tracking-wider rounded-lg dark:hover:bg-gray-600 transition-colors">VAZGEÇ</button>
+                <button onclick="window.confirmDeleteAction()" class="flex-1 py-3 bg-[#dc2626] text-white text-[12px] font-bold tracking-wider rounded-lg hover:bg-red-700 transition-colors">EVET, SİL</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- KÜRESEL UYUMLU ÖZEL ALERT MODALI -->
+    <!-- ======================= -->
+    <div id="custom-alert-modal" class="hidden fixed inset-0 bg-gray-900/80 dark:bg-black/90 z-[100] flex justify-center items-center px-4 backdrop-blur-sm">
+        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-gray-700 rounded-xl shadow-2xl w-full max-w-sm flex flex-col p-6 text-center transition-colors">
+            <div id="alert-modal-icon" class="text-3xl text-orange-500 mb-3"><i class="fa-solid fa-circle-exclamation"></i></div>
+            <h3 id="alert-modal-title" class="text-gray-900 dark:text-white font-bold text-lg mb-2">UYARI</h3>
+            <p id="alert-modal-message" class="text-gray-600 dark:text-gray-400 text-sm mb-6"></p>
+            <button onclick="window.closeAlert()" class="w-full py-2.5 bg-[#ff6600] text-white text-xs font-bold tracking-wider rounded-lg hover:bg-orange-600 transition-colors">TAMAM</button>
+        </div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- KÜRESEL UYUMLU ÖZEL CONFIRM MODALI -->
+    <!-- ======================= -->
+    <div id="custom-confirm-modal" class="hidden fixed inset-0 bg-gray-900/80 dark:bg-black/90 z-[95] flex justify-center items-center px-4 backdrop-blur-sm">
+        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-gray-700 rounded-xl shadow-2xl w-full max-w-sm flex flex-col p-6 text-center transition-colors">
+            <div id="confirm-modal-icon" class="text-3xl text-[#ff6600] mb-3"><i class="fa-solid fa-circle-question"></i></div>
+            <h3 id="confirm-modal-title" class="text-gray-900 dark:text-white font-bold text-lg mb-2">ONAY</h3>
+            <p id="confirm-modal-message" class="text-gray-600 dark:text-gray-400 text-sm mb-6"></p>
+            <div class="flex gap-3 w-full">
+                <button onclick="window.closeConfirm(false)" class="flex-1 py-2.5 bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-[#2d3748] dark:text-white text-xs font-bold rounded-lg dark:hover:bg-gray-600 transition-colors">VAZGEÇ</button>
+                <button onclick="window.closeConfirm(true)" class="flex-1 py-2.5 bg-[#ff6600] text-white text-xs font-bold rounded-lg hover:bg-orange-600 transition-colors">ONAYLA</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= -->
+    <!-- KÜRESEL UYUMLU ÖZEL PROMPT MODALI -->
+    <!-- ======================= -->
+    <div id="custom-prompt-modal" class="hidden fixed inset-0 bg-gray-900/80 dark:bg-black/90 z-[105] flex justify-center items-center px-4 backdrop-blur-sm">
+        <div class="bg-white border border-gray-200 dark:bg-dark-card dark:border-gray-700 rounded-xl shadow-2xl w-full max-w-md flex flex-col p-6 transition-colors">
+            <h3 id="prompt-modal-title" class="text-gray-900 dark:text-white font-bold text-lg mb-4">Veri Girişi</h3>
+            <textarea id="prompt-modal-input" rows="3" class="w-full bg-gray-50 border border-gray-300 text-gray-900 dark:bg-[#1a202c] dark:border-gray-700 dark:text-white rounded-lg p-3 text-sm focus:outline-none focus:border-[#ff6600] focus:ring-1 focus:ring-[#ff6600] resize-y mb-6 transition-colors"></textarea>
+            <div class="flex gap-3 w-full">
+                <button onclick="window.closePrompt(false)" class="flex-1 py-2.5 bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-[#2d3748] dark:text-white text-xs font-bold rounded-lg dark:hover:bg-gray-600 transition-colors">İPTAL</button>
+                <button onclick="window.closePrompt(true)" class="flex-1 py-2.5 bg-[#ff6600] text-white text-xs font-bold rounded-lg hover:bg-orange-600 transition-colors">KAYDET</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================== -->
+    <!-- UYGULAMA MANTIĞI VE VERİLER (CLOUDFLARE API MODÜLÜ) -->
+    <!-- ========================================== -->
+    <script>
+        let isAdmin = localStorage.getItem('dijitalmuhbir_admin_logged_in') === 'true';
+        let adminToken = localStorage.getItem('dijitalmuhbir_token') || '';
+        
+        let newsData = [];
+        let upcomingGamesData = [];
+        
+        let pendingDeleteId = null; 
+        let pendingDeleteType = null; 
+        
+        let currentCategory = '';
+        let currentSearchQuery = '';
+        let visibleFeedCount = 10;
+        let currentArticleId = null;
+        let adminCurrentTab = 'news'; 
+        let confirmResolver = null;
+        let promptResolver = null;
+        let editorSavedRange = null; 
+
+        function generateSlug(text) {
+            let trMap = {'çÇ':'c', 'ğĞ':'g', 'şŞ':'s', 'üÜ':'u', 'ıİ':'i', 'öÖ':'o'};
+            for(let key in trMap) {
+                text = text.replace(new RegExp('['+key+']','g'), trMap[key]);
+            }
+            return text.replace(/[^-a-zA-Z0-9\s]+/ig, '').replace(/\s/gi, "-").replace(/[-]+/gi, "-").toLowerCase();
+        }
+
+        // --- DINAMIK API URL ÇÖZÜMLEYİCİ ---
+        function getApiUrl() {
+            try {
+                let href = window.location.href;
+                // Sanal önizleme/editör ortamları fetch'i engellediğinden test edip null döneriz
+                if (href.startsWith('blob:') || href.includes('usercontent.goog') || href.includes('localhost')) {
+                    return null;
+                }
+                const urlObj = new URL(href);
+                return urlObj.origin + '/api/data';
+            } catch (e) {
+                return null;
+            }
+        }
+
+        // --- LOKAL YEDEK / ÖRNEK VERİLER ---
+        function loadMockData() {
+            newsData = [
+                {
+                    id: 'gta-6-pc-surumu-beklenen-aciklama', title: "GTA 6 PC Sürümü İçin Beklenen Açıklama Geldi!", category: "Oyun", author: "Cihan_Uçar", comments: 145, views: 2450, commentList: [],
+                    image: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1200&auto=format&fit=crop",
+                    summary: "Rockstar Games, konsol oyuncularının tadını çıkardığı GTA 6'nın PC sürümünün 2026'nın son çeyreğinde Steam ve Epic Games Store'a geleceğini duyurdu...",
+                    content: "<p>Rockstar Games, konsol oyuncularının tadını çıkardığı GTA 6'nın PC sürümünün 2026'nın son çeyreğinde Steam ve Epic Games Store'a geleceğini duyurdu.</p><p>Açıklamaya göre PC sürümü, sınırsız FPS kilidi, gelişmiş Ray Tracing modları ve resmi modlama araçlarıyla birlikte gelecek.</p>",
+                    date: "22 Mayıs 2026 21:30", createdAt: Date.now() - 100000
+                },
+                {
+                    id: 'ps5-pro-sistem-guncellemesi-ai', title: "PlayStation 5 Pro Sistem Güncellemesi ile AI Görüntü Yükseltme Geldi", category: "Donanım", author: "Aykutov", comments: 88, views: 1890, commentList: [],
+                    image: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?q=80&w=1200&auto=format&fit=crop",
+                    summary: "Sony'nin yeni yayınladığı 12.0 güncellemesi, PS5 Pro kullanıcıları için donanımsal AI destekli görüntü yükseltme (PSSR 2.0) özelliğini aktif hale getirdi.",
+                    content: "<p>Sony'nin yeni yayınladığı 12.0 güncellemesi, PS5 Pro kullanıcıları için donanımsal AI destekli görüntü yükseltme (PSSR 2.0) özelliğini aktif hale getirdi.</p><p>Bu yeni teknoloji sayesinde daha eski PS4 oyunları bile native 4K kalitesine çok yakın bir görsellikle oynanabilecek.</p>",
+                    date: "21 Mayıs 2026 15:45", createdAt: Date.now() - 500000
+                },
+                {
+                    id: 'invincible-vs-inceleme', title: "Invincible VS", category: "İnceleme", author: "DijitalMuhbir", comments: 12, views: 500, commentList: [], score: 75,
+                    image: "https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop",
+                    summary: "Çizgi roman estetiğini harika bir aksiyonla harmanlayan Invincible VS incelememiz.",
+                    content: "<p>Çizgi roman estetiğini harika bir aksiyonla harmanlayan Invincible VS incelememiz.</p>",
+                    date: "20 Mayıs 2026 12:00", createdAt: Date.now() - 1000000
+                },
+                {
+                    id: 'forza-horizon-6-inceleme', title: "Forza Horizon 6", category: "İnceleme", author: "DijitalMuhbir", comments: 50, views: 1200, commentList: [], score: 85,
+                    image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop",
+                    summary: "Açık dünya yarış oyunlarının kralı geri döndü.",
+                    content: "<p>Açık dünya yarış oyunlarının kralı geri döndü.</p>",
+                    date: "18 Mayıs 2026 18:20", createdAt: Date.now() - 2000000
+                }
+            ];
+        }
+
+        function loadMockUpcomingData() {
+            upcomingGamesData = [
+                { id: "upc_gta-6", name: "Grand Theft Auto VI", releaseDate: "2026 Sonbahar", platforms: "PS5, Xbox Series X/S", url: "https://www.rockstargames.com/VI", image: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=400&auto=format&fit=crop", showInSidebar: true, createdAt: Date.now() },
+                { id: "upc_witcher-4", name: "The Witcher 4: Polaris", releaseDate: "2027", platforms: "PC, PS5, Xbox", url: "https://www.thewitcher.com", image: "https://cdn2.unrealengine.com/witcher-new-saga-1920x1080-b2cc893a77ea.jpg", showInSidebar: true, createdAt: Date.now()-1000 },
+                { id: "upc_doom-dark-ages", name: "DOOM: The Dark Ages", releaseDate: "Ağustos 2026", platforms: "PC, PS5, Xbox", url: "https://slayersclub.bethesda.net", image: "https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=400&auto=format&fit=crop", showInSidebar: true, createdAt: Date.now()-2000 }
+            ];
+        }
+
+        // --- API FETCH FONKSİYONLARI ---
+        async function fetchInitialData() {
+            const apiUrl = getApiUrl();
+            
+            if (!apiUrl) {
+                console.warn("Önizleme ortamı tespit edildi. API çağrısı atlanarak lokal veriler yükleniyor.");
+                triggerLocalFallback();
+                return;
+            }
+
+            try {
+                const response = await fetch(apiUrl);
+                if(!response.ok) throw new Error("API hatası (" + response.status + ")");
+                
+                const result = await response.json();
+                if(result.news && result.news.length > 0) {
+                    newsData = result.news.sort((a, b) => b.createdAt - a.createdAt);
+                } else {
+                    loadMockData();
+                }
+                
+                if(result.upcoming && result.upcoming.length > 0) {
+                    upcomingGamesData = result.upcoming.sort((a, b) => b.createdAt - a.createdAt);
+                } else {
+                    loadMockUpcomingData();
+                }
+                
+                initView();
+            } catch (error) {
+                console.warn("Cloudflare Veritabanına ulaşılamadı. Lokal yedeğe geçiliyor. Detay: " + error.message);
+                triggerLocalFallback();
+            }
+        }
+
+        function triggerLocalFallback() {
+            loadMockData();
+            loadMockUpcomingData();
+            
+            const badgeText = document.getElementById('cloud-status-text');
+            const badgeDot = document.getElementById('cloud-status-dot');
+            const badgeBg = document.getElementById('cloud-status-badge');
+            
+            if(badgeText) badgeText.innerText = "Lokal Mod";
+            if(badgeBg) badgeBg.className = "flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-100 text-amber-600 dark:bg-amber-950/40 dark:text-amber-400 text-[10px] font-bold tracking-wide transition-all shadow-sm border border-amber-200 dark:border-amber-900/40";
+            if(badgeDot) badgeDot.className = "w-2 h-2 rounded-full bg-amber-500 block";
+            
+            initView();
+        }
+
+        function hideGlobalLoader() {
+            const loader = document.getElementById('global-loader');
+            if (loader) {
+                loader.style.opacity = '0';
+                setTimeout(() => loader.classList.add('hidden'), 150);
+            }
+        }
+
+        async function sendApiRequest(action, payload) {
+            const apiUrl = getApiUrl();
+            if (!apiUrl) {
+                console.warn("Lokal modda API değişikliği kaydedilmez.");
+                return { success: true }; // Lokal çalışıyorsa hata fırlatıp durdurmaması için
+            }
+            
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Authorization': adminToken
+                    },
+                    body: JSON.stringify({ action: action, payload: payload })
+                });
+                return await response.json();
+            } catch (e) {
+                console.error("API İsteği Başarısız", e);
+                return { success: false, error: e.message };
+            }
+        }
+
+        // --- GÖRÜNÜM BAŞLATICI ---
+        function initView() {
+            if (isAdmin) {
+                document.getElementById('btn-admin-panel').classList.remove('hidden');
+                document.getElementById('btn-admin-panel-mobile').classList.remove('hidden');
+                document.getElementById('btn-admin-panel-mobile').classList.add('block');
+            }
+            handleHashRoute();
+            hideGlobalLoader();
+        }
+
+        window.addEventListener('hashchange', handleHashRoute);
+        function handleHashRoute() {
+            const hash = window.location.hash;
+            if (hash.startsWith('#article-')) {
+                const id = hash.replace('#article-', '');
+                if (newsData.find(n => n.id === id)) window.openArticle(id, true);
+                else window.showView('home', true);
+            } else if (hash === '#admin') {
+                if (isAdmin) window.showView('admin', true);
+                else window.showView('home', true);
+            } else if (hash === '#upcoming') {
+                window.showView('upcoming', true);
+            } else {
+                window.showView('home', true);
+            }
+            updateNavActiveState();
+        }
+
+        function updateNavActiveState() {
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('text-red-500', 'dark:text-red-500');
+                link.classList.add('text-gray-600', 'dark:text-gray-200');
+            });
+            if(currentCategory) {
+                const activeBtn = document.getElementById('nav-btn-' + currentCategory.toLowerCase());
+                if(activeBtn) {
+                    activeBtn.classList.remove('text-gray-600'); activeBtn.classList.add('text-red-500');
+                }
+            } else if (!document.getElementById('view-upcoming').classList.contains('hidden')) {
+                const activeBtn = document.getElementById('nav-btn-upcoming');
+                if(activeBtn) {
+                    activeBtn.classList.remove('text-gray-600'); activeBtn.classList.add('text-red-500');
+                }
+            }
+        }
+
+        // --- UI YARDIMCI FONKSİYONLARI ---
+        window.showAlert = function(title, message, isError = false) {
+            document.getElementById('alert-modal-title').innerText = title;
+            document.getElementById('alert-modal-message').innerText = message;
+            
+            const iconContainer = document.getElementById('alert-modal-icon');
+            if (isError) {
+                iconContainer.className = "text-3xl text-red-500 mb-3";
+                iconContainer.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
+            } else {
+                iconContainer.className = "text-3xl text-orange-500 mb-3";
+                iconContainer.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>';
+            }
+            document.getElementById('custom-alert-modal').classList.remove('hidden');
+        };
+        window.closeAlert = function() { document.getElementById('custom-alert-modal').classList.add('hidden'); };
+
+        window.showConfirm = function(title, message) {
+            document.getElementById('confirm-modal-title').innerText = title;
+            document.getElementById('confirm-modal-message').innerText = message;
+            document.getElementById('custom-confirm-modal').classList.remove('hidden');
+            return new Promise((resolve) => confirmResolver = resolve);
+        };
+        window.closeConfirm = function(outcome) {
+            document.getElementById('custom-confirm-modal').classList.add('hidden');
+            if(confirmResolver) { confirmResolver(outcome); confirmResolver = null; }
+        };
+
+        window.showPrompt = function(title, defaultValue) {
+            document.getElementById('prompt-modal-title').innerText = title;
+            document.getElementById('prompt-modal-input').value = defaultValue;
+            document.getElementById('custom-prompt-modal').classList.remove('hidden');
+            setTimeout(() => document.getElementById('prompt-modal-input').focus(), 100);
+            return new Promise((resolve) => promptResolver = resolve);
+        };
+        window.closePrompt = function(isConfirm) {
+            document.getElementById('custom-prompt-modal').classList.add('hidden');
+            if(promptResolver) { promptResolver(isConfirm ? document.getElementById('prompt-modal-input').value : null); promptResolver = null; }
+        };
+
+        window.toggleTheme = function() {
+            document.documentElement.classList.toggle('dark');
+            const isDark = document.documentElement.classList.contains('dark');
+            document.getElementById('theme-icon').className = isDark ? 'fa-solid fa-sun text-lg' : 'fa-solid fa-moon text-lg';
+        };
+
+        window.toggleMobileMenu = function() {
+            const menu = document.getElementById('mobile-dropdown');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden'); menu.classList.add('flex');
+            } else {
+                menu.classList.add('hidden'); menu.classList.remove('flex');
+            }
+        };
+
+        window.showView = function(viewName, skipHashUpdate = false) {
+            const mobileMenu = document.getElementById('mobile-dropdown');
+            if (mobileMenu) { mobileMenu.classList.add('hidden'); mobileMenu.classList.remove('flex'); }
+
+            if (viewName === 'admin' && !isAdmin) { window.showAlert("Yetkisiz", "Lütfen yönetici girişi yapın.", true); return; }
+
+            ['view-home', 'view-article', 'view-admin', 'view-upcoming'].forEach(v => document.getElementById(v).classList.add('hidden'));
+            document.getElementById('view-' + viewName).classList.remove('hidden');
+
+            if(viewName === 'home') { window.renderHome(); window.renderSidebarReviews(); window.renderSidebarUpcoming(); }
+            if(viewName === 'upcoming') window.renderUpcomingMain();
+            if(viewName === 'admin') adminCurrentTab === 'news' ? window.renderAdminList() : window.renderUpcomingAdminList();
+            
+            if(!skipHashUpdate) window.location.hash = viewName === 'home' ? '' : (viewName === 'article' ? 'article-'+currentArticleId : viewName);
+            if(!skipHashUpdate) window.scrollTo(0,0);
+            updateNavActiveState();
+        };
+
+        window.filterCategory = function(cat) {
+            currentCategory = cat; visibleFeedCount = 10; document.getElementById('search-input').value = ''; currentSearchQuery = '';
+            const feedTitle = document.getElementById('feed-title');
+            if (feedTitle) feedTitle.innerHTML = cat ? `<i class="fa-solid fa-bolt text-red-500"></i> ${cat.toUpperCase()} HABERLERİ` : `<i class="fa-solid fa-bolt text-red-500"></i> SON HABERLER`;
+            window.showView('home');
+        };
+
+        window.handleSearch = function(query) {
+            currentSearchQuery = query.toLowerCase().trim(); visibleFeedCount = 10; currentCategory = '';
+            const feedTitle = document.getElementById('feed-title');
+            if (feedTitle) feedTitle.innerHTML = currentSearchQuery ? `<i class="fa-solid fa-search text-red-500"></i> ARAMA SONUÇLARI` : `<i class="fa-solid fa-bolt text-red-500"></i> SON HABERLER`;
+            window.showView('home');
+        };
+
+        window.loadMore = function() { visibleFeedCount += 10; window.renderHome(); };
+
+        // --- RENDER FONKSİYONLARI ---
+        window.renderSidebarReviews = function() {
+            const container = document.getElementById('sidebar-reviews-container');
+            const reviews = newsData.filter(n => n.category === 'İnceleme' && n.score).sort((a, b) => b.createdAt - a.createdAt);
+            if(reviews.length===0) { container.innerHTML = '<div class="text-center py-6 text-gray-500 text-sm">Henüz inceleme eklenmedi.</div>'; return; }
+            
+            const topReview = reviews[0];
+            let html = `
+                <div class="relative w-full h-40 cursor-pointer group" onclick="window.openArticle('${topReview.id}')">
+                    <img src="${topReview.image}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+                    <div class="absolute bottom-3 left-3 right-16">
+                        <h3 class="text-white text-sm font-bold line-clamp-2">${topReview.title} - İnceleme</h3>
+                    </div>
+                    <div class="absolute bottom-2 right-3 w-10 h-10 bg-white dark:bg-gray-200 rounded-full flex items-center justify-center shadow-lg font-black text-lg text-gray-900 border-2 border-gray-900">${topReview.score}</div>
+                </div><div class="flex flex-col">
+            `;
+            
+            reviews.slice(1, 6).forEach(r => {
+                html += `<div class="flex items-center justify-between p-3 border-b border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-[#2d3748] cursor-pointer transition-colors group" onclick="window.openArticle('${r.id}')"><span class="text-[13px] font-medium text-gray-800 dark:text-gray-200 group-hover:text-red-500 line-clamp-1 pr-2">${r.title} - İnceleme</span><span class="text-[13px] font-bold text-gray-900 dark:text-white border-l border-gray-200 dark:border-gray-700 pl-3 shrink-0">${r.score}</span></div>`;
+            });
+            container.innerHTML = html + "</div>";
+        };
+
+        window.renderSidebarUpcoming = function() {
+            const container = document.getElementById('upcoming-games-container');
+            const games = upcomingGamesData.filter(g => g.showInSidebar).slice(0,5);
+            if(games.length === 0) { container.innerHTML = '<p class="text-xs text-gray-500 text-center py-4">Gösterilecek oyun bulunamadı.</p>'; return; }
+            
+            let html = games.map(g => `
+                <div class="relative flex justify-between items-center bg-gray-100 hover:bg-gray-200 dark:bg-[#2d3748] p-2.5 pl-4 rounded-lg dark:hover:bg-[#374151] transition-colors shadow-sm cursor-pointer group" onclick="window.open('${g.url}', '_blank')">
+                    <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-red-500 rounded-r-md"></div>
+                    <div class="flex flex-col w-full pr-2">
+                        <span class="text-[13px] text-gray-800 dark:text-gray-200 font-bold truncate group-hover:text-red-600 dark:group-hover:text-red-400">${g.name}</span>
+                        <span class="text-[10px] text-gray-500 font-semibold truncate">${g.platforms}</span>
+                    </div>
+                    <span class="bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300 text-[10px] font-black px-2 py-1 rounded shrink-0">${g.releaseDate}</span>
+                </div>
+            `).join('');
+            container.innerHTML = html;
+        };
+
+        window.renderUpcomingMain = function() {
+            const container = document.getElementById('upcoming-main-grid');
+            if (upcomingGamesData.length === 0) { container.innerHTML = '<p class="text-sm text-gray-500 col-span-full py-10 text-center">Henüz çıkış tarihi eklenmemiş.</p>'; return; }
+
+            container.innerHTML = upcomingGamesData.map(g => `
+                <div class="flex flex-col gap-2 group cursor-pointer" onclick="window.open('${g.url}', '_blank')">
+                    <div class="aspect-[2/3] w-full rounded-xl overflow-hidden relative shadow-md border border-gray-200 dark:border-gray-700 group-hover:border-red-500 transition-colors">
+                        <img src="${g.image}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="px-1 mt-1">
+                        <h3 class="font-bold text-[13px] md:text-[15px] text-gray-900 dark:text-white line-clamp-2 leading-tight group-hover:text-red-600">${g.name}</h3>
+                        <p class="text-xs text-red-600 dark:text-red-400 font-bold mt-1">${g.releaseDate}</p>
+                        <p class="text-[10px] text-gray-500 font-semibold mt-0.5 truncate">${g.platforms}</p>
+                    </div>
+                </div>
+            `).join('');
+        };
+
+        window.renderHome = function() {
+            const sliderContainer = document.getElementById('slider-container');
+            const feedContainer = document.getElementById('news-feed-container');
+            
+            let filtered = newsData;
+            if(currentCategory) filtered = filtered.filter(n => n.category === currentCategory);
+            if(currentSearchQuery) filtered = filtered.filter(n => 
+                n.title.toLowerCase().includes(currentSearchQuery) || 
+                (n.summary && n.summary.toLowerCase().includes(currentSearchQuery))
+            );
+            
+            if (filtered.length === 0) {
+                sliderContainer.innerHTML = '';
+                feedContainer.innerHTML = '<p class="text-center text-gray-500 py-10">Kritere uygun haber bulunamadı.</p>';
+                return;
+            }
+
+            const getSliderAdminButtons = (articleId) => {
+                if(!isAdmin) return '';
+                return `
+                    <div class="absolute top-2 right-2 flex gap-1 z-20">
+                        <button onclick="event.stopPropagation(); window.editArticle('${articleId}')" class="bg-blue-900/80 border border-blue-500 text-blue-300 w-8 h-8 flex items-center justify-center rounded"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="event.stopPropagation(); window.deleteArticle('${articleId}')" class="bg-red-900/80 border border-red-500 text-red-300 w-8 h-8 flex items-center justify-center rounded"><i class="fa-solid fa-trash"></i></button>
+                    </div>
+                `;
+            };
+
+            const sliderNews = filtered.slice(0, 5);
+            if(sliderNews.length > 0) {
+                const bigArticle = sliderNews[0];
+                let smallHTML = '';
+                for(let i = 1; i < sliderNews.length; i++) {
+                    smallHTML += `
+                        <article class="relative overflow-hidden rounded-md group cursor-pointer shadow-sm bg-white border-gray-200 dark:bg-[#1a202c] border dark:border-gray-800 h-[170px] lg:h-full" onclick="window.openArticle('${sliderNews[i].id}')">
+                            <img src="${sliderNews[i].image}" class="w-full h-full object-cover transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40 to-transparent dark:from-[#0f1217] dark:via-black/40"></div>
+                            ${getSliderAdminButtons(sliderNews[i].id)}
+                            <div class="absolute top-2 left-2 flex gap-0 scale-90 lg:scale-100 origin-top-left">
+                                <div class="bg-[#ff6600]/90 text-white text-xs font-bold px-2 py-1 backdrop-blur-sm">${sliderNews[i].category}</div>
+                            </div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h3 class="text-white text-sm lg:text-[15px] font-extrabold leading-tight group-hover:text-[#ff6600] line-clamp-2">${sliderNews[i].title}</h3>
+                            </div>
+                        </article>
+                    `;
+                }
+                sliderContainer.innerHTML = `
+                    <div class="flex flex-col lg:flex-row gap-2 w-full h-auto lg:aspect-[134/38]">
+                        <article class="w-full lg:flex-1 h-[300px] lg:h-full relative overflow-hidden rounded-md group cursor-pointer shadow-md border dark:border-gray-800" onclick="window.openArticle('${bigArticle.id}')">
+                            <img src="${bigArticle.image}" class="w-full h-full object-cover transition-transform duration-500 opacity-80 group-hover:opacity-100">
+                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
+                            ${getSliderAdminButtons(bigArticle.id)}
+                            <div class="absolute top-4 left-4 flex gap-0">
+                                <div class="bg-[#ff6600] text-white text-xs lg:text-sm font-bold px-3 py-1 shadow-sm">${bigArticle.category}</div>
+                            </div>
+                            <div class="absolute bottom-4 left-4 right-4 lg:bottom-6 lg:left-6 lg:right-6">
+                                <h2 class="text-white text-2xl lg:text-[28px] font-extrabold leading-tight mb-2 group-hover:text-[#ff6600] drop-shadow-lg">${bigArticle.title}</h2>
+                            </div>
+                        </article>
+                        <div class="w-full lg:w-[41.5%] grid grid-cols-2 grid-rows-2 gap-2">${smallHTML}</div>
+                    </div>
+                `;
+            } else {
+                sliderContainer.innerHTML = '';
+            }
+
+            let feedHTML = '';
+            filtered.slice(5, 5 + visibleFeedCount).forEach(article => {
+                let adminActionButtons = '';
+                if (isAdmin) {
+                    adminActionButtons = `
+                        <div class="flex items-center gap-3 w-full sm:w-auto mt-3 sm:mt-0 justify-end">
+                            <span class="text-xs font-bold text-gray-500 mr-2"><i class="fa-solid fa-eye text-[#ff6600]"></i> ${article.views || 0}</span>
+                            <button onclick="event.stopPropagation(); window.editArticle('${article.id}')" class="flex items-center gap-1 border border-blue-500/50 text-blue-500 px-2 py-1 rounded text-[10px] font-bold"><i class="fa-solid fa-pen-to-square"></i> DÜZENLE</button>
+                            <button onclick="event.stopPropagation(); window.deleteArticle('${article.id}')" class="flex items-center gap-1 border border-red-500/50 text-red-500 px-2 py-1 rounded text-[10px] font-bold"><i class="fa-solid fa-trash"></i> SİL</button>
+                        </div>
+                    `;
+                }
+
+                feedHTML += `
+                    <article class="flex flex-col sm:flex-row gap-4 bg-white dark:bg-dark-card p-4 rounded-xl shadow-sm hover:shadow-lg transition-all group cursor-pointer border border-gray-200 dark:border-dark-border" onclick="window.openArticle('${article.id}')">
+                        <div class="w-full sm:w-1/3 h-40 sm:h-36 overflow-hidden rounded-lg relative flex-shrink-0">
+                            <img src="${article.image}" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300">
+                            <div class="absolute top-2 left-2 bg-[#ff6600] text-white text-[10px] uppercase font-bold px-2 py-1 rounded">${article.category}</div>
+                        </div>
+                        <div class="w-full sm:w-2/3 flex flex-col justify-between py-1">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-gray-500 text-[11px] font-medium">${article.date}</span>
+                                </div>
+                                <h3 class="text-lg font-bold text-gray-900 dark:text-gray-200 group-hover:text-[#ff6600] leading-tight mb-2">${article.title}</h3>
+                                <p class="text-[13px] text-gray-600 dark:text-gray-400 line-clamp-2">${article.summary}</p>
+                            </div>
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mt-4 pt-4 border-t border-gray-200 dark:border-gray-800">
+                                <div class="flex items-center gap-4 text-[12px] font-medium text-gray-500">
+                                    <span>Yazar: <span class="text-gray-800 dark:text-gray-300 font-bold">${article.author || 'Admin'}</span></span>
+                                    <span class="flex items-center gap-1.5 font-bold"><i class="fa-solid fa-comments text-[#ff6600]"></i> <span class="text-gray-800 dark:text-gray-300">${article.comments || 0} Yorum</span></span>
+                                </div>
+                                ${adminActionButtons}
+                            </div>
+                        </div>
+                    </article>
+                `;
+            });
+            feedContainer.innerHTML = feedHTML;
+
+            const popularContainer = document.getElementById('popular-news-container');
+            popularContainer.innerHTML = [...newsData].sort((a,b) => (b.views||0) - (a.views||0)).slice(0,5).map((a, idx) => `
+                <article class="flex gap-3 items-center bg-white dark:bg-dark-card p-3 rounded-lg shadow-sm group hover:bg-gray-100 dark:hover:bg-[#2d3748] border dark:border-dark-border cursor-pointer" onclick="window.openArticle('${a.id}')">
+                    <span class="text-xl font-black text-gray-400 min-w-[20px] text-center">${idx + 1}</span>
+                    <div>
+                        <h4 class="text-xs font-bold text-gray-800 dark:text-gray-300 group-hover:text-[#ff6600] line-clamp-2 leading-tight mb-1">${a.title}</h4>
+                        <span class="text-[10px] font-medium text-gray-500"><i class="fa-solid fa-eye text-[#ff6600]"></i> ${a.views || 0} Görüntülenme</span>
+                    </div>
+                </article>
+            `).join('');
+
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            if(loadMoreBtn) {
+                if(filtered.length > 5 + visibleFeedCount) loadMoreBtn.classList.remove('hidden');
+                else loadMoreBtn.classList.add('hidden');
+            }
+        };
+
+        window.openArticle = async function(id, skipHashUpdate) {
+            currentArticleId = id;
+            const a = newsData.find(n => n.id === id);
+            if(!a) return;
+            
+            a.views = (a.views || 0) + 1;
+            sendApiRequest('updateViews', { id: a.id });
+
+            document.getElementById('detail-image').src = a.image;
+            document.getElementById('detail-title').innerText = a.title;
+            document.getElementById('detail-category').innerText = a.category;
+            document.getElementById('detail-author').innerHTML = `Yazar: <span class="text-[#ff6600]">${a.author || 'DijitalMuhbir'}</span>`;
+            document.getElementById('detail-date').innerHTML = `<i class="fa-regular fa-clock"></i> ${a.date}`;
+            document.getElementById('detail-content').innerHTML = a.content;
+            
+            const detailEditBtn = document.getElementById('detail-admin-edit-btn');
+            if (isAdmin) {
+                detailEditBtn.classList.remove('hidden'); detailEditBtn.classList.add('flex');
+                detailEditBtn.onclick = () => window.openEditor(a.id);
+            } else {
+                detailEditBtn.classList.add('hidden'); detailEditBtn.classList.remove('flex');
+            }
+            
+            const scoreContainer = document.getElementById('detail-review-score-container');
+            if (a.category === 'İnceleme' && a.score !== undefined && a.score !== null) {
+                let scoreColor = 'text-green-500'; let bgScoreColor = 'bg-green-500';
+                if(a.score < 75 && a.score >= 50) { scoreColor = 'text-yellow-500'; bgScoreColor = 'bg-yellow-500'; }
+                if(a.score < 50) { scoreColor = 'text-red-500'; bgScoreColor = 'bg-red-500'; }
+                const scoreDesc = a.scoreDesc || "Editörümüzün tüm analizleri sonucu, bu içeriğe verdiği nihai puan ve genel performans değerlendirmesi.";
+                
+                scoreContainer.innerHTML = `
+                    <div class="bg-gray-50 border border-gray-200 dark:bg-[#1a202c] dark:border-gray-700 rounded-xl p-6 flex flex-col md:flex-row justify-between items-center gap-6 shadow-sm transition-colors">
+                        <div class="flex-grow text-center md:text-left">
+                            <h3 class="text-xl md:text-2xl font-black text-gray-900 dark:text-white mb-2 uppercase tracking-wide"><i class="fa-solid fa-star text-red-500"></i> İNCELEME PUANI</h3>
+                            <p class="text-[13px] md:text-sm text-gray-600 dark:text-gray-400 max-w-md">${scoreDesc}</p>
+                        </div>
+                        <div class="flex flex-col items-center justify-center shrink-0">
+                            <div class="w-24 h-24 rounded-full border-[6px] border-gray-200 dark:border-gray-700 flex items-center justify-center relative overflow-hidden bg-white dark:bg-dark-card shadow-inner">
+                                <span class="text-3xl font-black ${scoreColor} z-10">${a.score}</span>
+                                <div class="absolute bottom-0 left-0 right-0 opacity-[0.15] ${bgScoreColor}" style="height: ${a.score}%"></div>
+                            </div>
+                            <span class="text-[10px] font-bold text-gray-500 mt-2 uppercase">100 ÜZERİNDEN</span>
+                        </div>
+                    </div>`;
+                scoreContainer.classList.remove('hidden');
+            } else {
+                scoreContainer.classList.add('hidden'); scoreContainer.innerHTML = '';
+            }
+
+            const relatedContainer = document.getElementById('detail-related-contents');
+            const shuffled = newsData.filter(x => x.id !== a.id).sort(() => 0.5 - Math.random()).slice(0, 4);
+            relatedContainer.innerHTML = shuffled.map(r => `
+                <a href="#" onclick="window.openArticle('${r.id}'); return false;" class="flex gap-4 bg-gray-50 dark:bg-[#1a202c] border dark:border-gray-700 p-3 rounded-xl hover:shadow-md transition-all group">
+                    <img src="${r.image}" class="w-[85px] h-[65px] object-cover rounded-lg flex-shrink-0 group-hover:opacity-90">
+                    <div class="flex flex-col justify-center flex-grow pr-2">
+                        <span class="text-[10px] text-[#ff6600] font-bold uppercase mb-1">${r.category}</span>
+                        <h4 class="text-[13px] font-bold text-gray-800 dark:text-gray-200 group-hover:text-[#ff6600] line-clamp-2">${r.title}</h4>
+                    </div>
+                </a>
+            `).join('');
+
+            setTimeout(() => { if (window.twttr && window.twttr.widgets) window.twttr.widgets.load(document.getElementById('detail-content')); }, 100);
+
+            window.renderComments(a);
+            window.showView('article', skipHashUpdate);
+        };
+
+        window.renderComments = function(article) {
+            document.getElementById('detail-comments-top').innerHTML = `<i class="fa-solid fa-comments text-[#ff6600]"></i> <span class="text-white dark:text-gray-200">${article.comments || 0}</span> Yorum`;
+            document.getElementById('detail-comment-count-bottom').innerText = article.comments || 0;
+            
+            const listDiv = document.getElementById('comments-list');
+            if(!article.commentList || article.commentList.length === 0) {
+                listDiv.innerHTML = '<p class="text-sm text-gray-500 italic border border-dashed dark:border-gray-700 p-4 rounded text-center">Henüz yorum yapılmamış. İlk yorumu siz yapın!</p>';
+                return;
+            }
+            
+            listDiv.innerHTML = article.commentList.map((c, i) => {
+                const initials = c.author ? c.author.charAt(0).toUpperCase() : 'Z';
+                let adminActions = isAdmin ? `
+                    <div class="flex gap-2 ml-4">
+                        <button onclick="window.editComment('${article.id}', ${i})" class="text-blue-500 text-xs"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="window.deleteComment('${article.id}', ${i})" class="text-red-500 text-xs"><i class="fa-solid fa-trash"></i></button>
+                    </div>` : '';
+
+                return `
+                    <div class="bg-gray-50 dark:bg-dark-bg p-4 rounded-xl border border-gray-200 dark:border-dark-border flex gap-4">
+                        <div class="w-10 h-10 rounded-full bg-[#ff6600] text-white flex items-center justify-center font-bold text-sm shrink-0">${initials}</div>
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-start mb-2">
+                                <div><span class="font-bold text-sm text-gray-900 dark:text-gray-200 mr-2">${c.author}</span><span class="text-[11px] text-gray-500">${c.date}</span></div>
+                            </div>
+                            <p class="text-sm text-gray-700 dark:text-gray-400 mb-3">${c.text}</p>
+                            <div class="flex items-center justify-between border-t border-gray-200 dark:border-gray-700 pt-2 mt-2">
+                                <button onclick="window.likeComment('${article.id}', ${i})" class="flex items-center gap-1.5 text-[11px] font-bold text-gray-500 hover:text-red-500 group">
+                                    <i class="fa-solid fa-heart ${c.likes > 0 ? 'text-red-500' : 'text-gray-400'} group-hover:text-red-500 text-sm"></i> ${c.likes || 0} Beğeni
+                                </button>
+                                ${adminActions}
+                            </div>
+                        </div>
+                    </div>`;
+            }).join('');
+        };
+
+        window.addComment = async function() {
+            const textArea = document.getElementById('new-comment-text');
+            const text = textArea.value.trim();
+            if(!text || !currentArticleId) return;
+            
+            const authorInput = document.getElementById('comment-author-name');
+            let authorName = authorInput ? authorInput.value.trim() : "";
+            if(!authorName) authorName = isAdmin ? "Yönetici" : "Ziyaretçi";
+            else localStorage.setItem('dijitalmuhbir_username', authorName);
+            
+            const article = newsData.find(n => n.id === currentArticleId);
+            if(!article) return;
+            
+            const newComment = { author: authorName, text: text, likes: 0, date: new Date().toLocaleString('tr-TR') };
+            if(!article.commentList) article.commentList = [];
+            article.commentList.push(newComment);
+            article.comments = article.commentList.length;
+            
+            window.renderComments(article);
+            textArea.value = '';
+            await sendApiRequest('addComment', { articleId: currentArticleId, comment: newComment });
+        };
+
+        window.deleteComment = async function(articleId, index) {
+            const confirm = await window.showConfirm("Yorumu Sil", "Bu yorumu silmek istediğinize emin misiniz?");
+            if(!confirm) return;
+            const article = newsData.find(n => n.id === articleId);
+            article.commentList.splice(index, 1);
+            article.comments = article.commentList.length;
+            window.renderComments(article);
+            await sendApiRequest('deleteComment', { articleId: articleId, commentIndex: index });
+        };
+
+        window.editComment = async function(articleId, index) {
+            const article = newsData.find(n => n.id === articleId);
+            const comment = article.commentList[index];
+            const newText = await window.showPrompt("Yorumu Düzenle:", comment.text);
+            if(newText === null || newText.trim() === "") return;
+            comment.text = newText.trim();
+            window.renderComments(article);
+            await sendApiRequest('editComment', { articleId: articleId, commentIndex: index, newText: comment.text }); // Yeni endpoint gerektirebilir veya saveNews kullanılabilir
+        };
+
+        window.likeComment = async function(articleId, index) {
+            const article = newsData.find(n => n.id === articleId);
+            article.commentList[index].likes = (article.commentList[index].likes || 0) + 1;
+            window.renderComments(article);
+            await sendApiRequest('saveNews', article); // Kolaylık için tüm makale gönderildi
+        };
+
+        // --- YÖNETİCİ GİRİŞİ ---
+        window.toggleLogin = async function() {
+            if (isAdmin) {
+                const confirmLogOut = await window.showConfirm("Yönetici Çıkışı", "Yönetici hesabından çıkış yapmak istiyor musunuz?");
+                if (confirmLogOut) {
+                    isAdmin = false; adminToken = '';
+                    localStorage.removeItem('dijitalmuhbir_admin_logged_in'); localStorage.removeItem('dijitalmuhbir_token');
+                    window.location.reload();
+                }
+            } else {
+                document.getElementById('custom-login-modal').classList.remove('hidden');
+                setTimeout(() => document.getElementById('admin-password-input').focus(), 100);
+            }
+        };
+        window.closeLoginModal = function() { document.getElementById('custom-login-modal').classList.add('hidden'); };
+        window.submitLogin = function() {
+            const pass = document.getElementById('admin-password-input').value;
+            isAdmin = true; adminToken = pass; 
+            localStorage.setItem('dijitalmuhbir_admin_logged_in', 'true');
+            localStorage.setItem('dijitalmuhbir_token', pass);
+            window.closeLoginModal();
+            window.location.reload();
+        };
+
+        // --- VERİ KAYIT / SİLME İŞLEMLERİ ---
+        window.saveArticle = async function() {
+            const btnSave = document.getElementById('btn-save-article');
+            const originalText = btnSave.innerText;
+            btnSave.disabled = true; btnSave.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> BEKLEYİN...';
+
+            const id = document.getElementById('edit-id').value;
+            const title = document.getElementById('edit-title').value;
+            const category = document.getElementById('edit-category').value;
+            const contentHtml = document.getElementById('edit-content').innerHTML;
+            const rawText = document.getElementById('edit-content').innerText || "";
+
+            if(!title.trim() || (!rawText.trim() && !contentHtml.includes('<img') && !contentHtml.includes('<iframe'))) {
+                window.showAlert("Eksik Bilgi", "Lütfen başlık ve içerik girin!", true);
+                btnSave.disabled = false; btnSave.innerText = originalText;
+                return;
+            }
+
+            const articleData = {
+                id: id || generateSlug(title) + '-' + Date.now(),
+                title: title,
+                category: category,
+                author: document.getElementById('edit-author').value || "Admin",
+                image: document.getElementById('edit-image').value || 'https://images.unsplash.com/photo-1605901309584-818e25960b8f?q=80&w=1200&auto=format&fit=crop',
+                content: contentHtml,
+                summary: rawText.substring(0, 150) + '...',
+                score: category === 'İnceleme' ? document.getElementById('edit-score').value : null,
+                scoreDesc: category === 'İnceleme' ? document.getElementById('edit-score-desc').value : null,
+                date: id ? newsData.find(n => n.id === id).date : new Date().toLocaleString('tr-TR'),
+                createdAt: id ? newsData.find(n => n.id === id).createdAt : Date.now()
+            };
+
+            const result = await sendApiRequest('saveNews', articleData);
+            if (result.success) {
+                if(id) { const idx = newsData.findIndex(n => n.id === id); newsData[idx] = {...newsData[idx], ...articleData}; } 
+                else { newsData.unshift(articleData); }
+                window.closeEditor();
+                if(adminCurrentTab === 'news') window.renderAdminList();
+                if(document.getElementById('view-home').classList.contains('hidden') === false) window.renderHome();
+                window.showAlert("Başarılı", "İçerik kaydedildi.");
+            } else {
+                window.showAlert("API Hatası", result.error || "Sunucuya kaydedilemedi.", true);
+            }
+            btnSave.disabled = false; btnSave.innerText = originalText;
+        };
+
+        window.saveUpcomingGame = async function() {
+            const btnSave = document.getElementById('btn-save-upcoming');
+            const originalText = btnSave.innerText;
+            btnSave.disabled = true; btnSave.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> BEKLEYİN...';
+
+            const gameData = {
+                id: document.getElementById('upcoming-edit-id').value || "upc_" + Date.now(),
+                name: document.getElementById('upcoming-edit-name').value,
+                releaseDate: document.getElementById('upcoming-edit-date').value,
+                platforms: document.getElementById('upcoming-edit-platforms').value,
+                url: document.getElementById('upcoming-edit-url').value,
+                image: document.getElementById('upcoming-edit-image').value,
+                showInSidebar: document.getElementById('upcoming-edit-sidebar').checked,
+                createdAt: document.getElementById('upcoming-edit-id').value ? upcomingGamesData.find(n => n.id === document.getElementById('upcoming-edit-id').value).createdAt : Date.now()
+            };
+
+            const result = await sendApiRequest('saveUpcoming', gameData);
+            if (result.success) {
+                const idx = upcomingGamesData.findIndex(n => n.id === gameData.id);
+                if(idx > -1) upcomingGamesData[idx] = gameData; else upcomingGamesData.unshift(gameData);
+                window.closeUpcomingEditor();
+                if(adminCurrentTab === 'upcoming') window.renderUpcomingAdminList();
+                window.renderUpcomingMain(); window.renderSidebarUpcoming();
+            } else {
+                window.showAlert("API Hatası", result.error, true);
+            }
+            btnSave.disabled = false; btnSave.innerText = originalText;
+        };
+
+        window.deleteAction = function(id, type) {
+            pendingDeleteId = id; pendingDeleteType = type;
+            document.getElementById('custom-delete-modal').classList.remove('hidden');
+        };
+        window.deleteArticle = function(id) { window.deleteAction(id, 'news'); };
+        window.deleteUpcomingAction = function(id) { window.deleteAction(id, 'upcoming'); };
+        window.closeDeleteModal = function() { document.getElementById('custom-delete-modal').classList.add('hidden'); };
+        
+        window.confirmDeleteAction = async function() {
+            if(!pendingDeleteId) return;
+            const result = await sendApiRequest('deleteData', { id: pendingDeleteId, type: pendingDeleteType });
+            if (result.success) {
+                if(pendingDeleteType === 'news') newsData = newsData.filter(n => n.id !== pendingDeleteId);
+                else upcomingGamesData = upcomingGamesData.filter(n => n.id !== pendingDeleteId);
+                window.closeDeleteModal();
+                if(adminCurrentTab==='news') window.renderAdminList(); else window.renderUpcomingAdminList();
+                window.renderHome(); window.renderUpcomingMain(); window.renderSidebarUpcoming();
+            } else {
+                window.showAlert("API Hatası", "Silme işlemi sunucuda başarısız oldu.", true);
+            }
+        };
+
+        // ADMIN TABLOLARI VE EDİTÖR ARAÇLARI
+        window.switchAdminTab = function(tabName) {
+            adminCurrentTab = tabName;
+            const btnNews = document.getElementById('admin-tab-news');
+            const btnUpcoming = document.getElementById('admin-tab-upcoming');
+            const containerNews = document.getElementById('admin-table-news-container');
+            const containerUpcoming = document.getElementById('admin-table-upcoming-container');
+
+            if (tabName === 'news') {
+                btnNews.className = "px-5 py-3 font-bold text-sm text-[#ff6600] border-b-2 border-[#ff6600] transition-colors focus:outline-none uppercase tracking-wide";
+                btnUpcoming.className = "px-5 py-3 font-bold text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 border-b-2 border-transparent focus:outline-none uppercase";
+                containerNews.classList.remove('hidden'); containerUpcoming.classList.add('hidden');
+                window.renderAdminList();
+            } else {
+                btnUpcoming.className = "px-5 py-3 font-bold text-sm text-red-500 border-b-2 border-red-500 transition-colors focus:outline-none uppercase tracking-wide";
+                btnNews.className = "px-5 py-3 font-bold text-sm text-gray-500 hover:text-gray-800 dark:text-gray-400 border-b-2 border-transparent focus:outline-none uppercase";
+                containerUpcoming.classList.remove('hidden'); containerNews.classList.add('hidden');
+                window.renderUpcomingAdminList();
+            }
+        };
+
+        window.renderAdminList = function() {
+            document.getElementById('admin-news-list').innerHTML = newsData.map(a => `
+                <tr class="border-b dark:border-gray-700">
+                    <td class="p-4"><img src="${a.image}" class="w-16 h-10 object-cover rounded"></td>
+                    <td class="p-4 text-sm font-semibold">${a.title}</td>
+                    <td class="p-4 text-xs"><span class="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">${a.category}</span></td>
+                    <td class="p-4 text-xs">${a.category === 'İnceleme' ? `<span class="text-red-500 font-bold">${a.score || '-'}</span>` : '-'}</td>
+                    <td class="p-4 text-xs font-bold text-[#ff6600] text-center">${a.views || 0}</td>
+                    <td class="p-4 text-xs text-gray-500">${a.date}</td>
+                    <td class="p-4 text-right min-w-[100px]">
+                        <button onclick="window.openEditor('${a.id}')" class="text-blue-500 hover:text-blue-400 mx-2"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="window.deleteAction('${a.id}', 'news')" class="text-red-500 hover:text-red-400"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+            `).join('');
+        };
+        window.renderUpcomingAdminList = function() {
+            document.getElementById('admin-upcoming-list').innerHTML = upcomingGamesData.map(g => `
+                <tr class="border-b dark:border-gray-700">
+                    <td class="p-4"><img src="${g.image}" class="w-10 h-14 object-cover rounded"></td>
+                    <td class="p-4 text-sm font-semibold">${g.name}</td>
+                    <td class="p-4 text-xs text-red-500 font-bold">${g.releaseDate}</td>
+                    <td class="p-4 text-xs">${g.platforms}</td>
+                    <td class="p-4 text-center">${g.showInSidebar ? '<span class="text-green-500 font-bold">Evet</span>' : '<span class="text-gray-500">Hayır</span>'}</td>
+                    <td class="p-4 text-right min-w-[100px]">
+                        <button onclick="window.openUpcomingEditor('${g.id}')" class="text-blue-500 hover:text-blue-400 mx-2"><i class="fa-solid fa-pen-to-square"></i></button>
+                        <button onclick="window.deleteAction('${g.id}', 'upcoming')" class="text-red-500 hover:text-red-400"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                </tr>
+            `).join('');
+        };
+
+        window.openEditor = function(id = null, isReview = false) {
+            document.getElementById('custom-editor-modal').classList.remove('hidden');
+            const scoreContainer = document.getElementById('edit-score-container');
+            const categoryInput = document.getElementById('edit-category');
+            if(id) {
+                const a = newsData.find(x => x.id === id);
+                document.getElementById('edit-id').value = a.id;
+                document.getElementById('edit-title').value = a.title;
+                categoryInput.value = a.category;
+                document.getElementById('edit-author').value = a.author || "Admin";
+                document.getElementById('edit-image').value = a.image || "";
+                document.getElementById('edit-content').innerHTML = a.content || "";
+                
+                if (a.category === 'İnceleme') {
+                    scoreContainer.classList.remove('hidden'); scoreContainer.classList.add('grid');
+                    document.getElementById('edit-score').value = a.score || '';
+                    document.getElementById('edit-score-desc').value = a.scoreDesc || '';
+                } else {
+                    scoreContainer.classList.add('hidden'); scoreContainer.classList.remove('grid');
+                }
+            } else {
+                document.getElementById('edit-id').value = ''; document.getElementById('edit-title').value = '';
+                document.getElementById('edit-image').value = ''; document.getElementById('edit-content').innerHTML = '';
+                if(isReview) {
+                    categoryInput.value = 'İnceleme';
+                    scoreContainer.classList.remove('hidden'); scoreContainer.classList.add('grid');
+                } else {
+                    categoryInput.value = 'Oyun';
+                    scoreContainer.classList.add('hidden'); scoreContainer.classList.remove('grid');
+                }
+            }
+        };
+        window.closeEditor = function() { document.getElementById('custom-editor-modal').classList.add('hidden'); };
+
+        document.getElementById('edit-category').addEventListener('change', function(e) {
+            const scoreContainer = document.getElementById('edit-score-container');
+            if(e.target.value === 'İnceleme') { scoreContainer.classList.remove('hidden'); scoreContainer.classList.add('grid'); } 
+            else { scoreContainer.classList.add('hidden'); scoreContainer.classList.remove('grid'); }
+        });
+
+        window.openUpcomingEditor = function(id=null) {
+            document.getElementById('custom-upcoming-modal').classList.remove('hidden');
+            if(id) {
+                const g = upcomingGamesData.find(x => x.id === id);
+                document.getElementById('upcoming-edit-id').value = g.id; document.getElementById('upcoming-edit-name').value = g.name;
+                document.getElementById('upcoming-edit-date').value = g.releaseDate; document.getElementById('upcoming-edit-platforms').value = g.platforms;
+                document.getElementById('upcoming-edit-url').value = g.url; document.getElementById('upcoming-edit-image').value = g.image;
+                document.getElementById('upcoming-edit-sidebar').checked = g.showInSidebar;
+            } else {
+                document.getElementById('upcoming-edit-id').value = ''; document.getElementById('upcoming-edit-name').value = '';
+                document.getElementById('upcoming-edit-date').value = ''; document.getElementById('upcoming-edit-platforms').value = '';
+                document.getElementById('upcoming-edit-url').value = ''; document.getElementById('upcoming-edit-image').value = '';
+                document.getElementById('upcoming-edit-sidebar').checked = true;
+            }
+        };
+        window.closeUpcomingEditor = function() { document.getElementById('custom-upcoming-modal').classList.add('hidden'); };
+
+        // Editör Araçları
+        window.saveEditorSelection = function() { const sel = window.getSelection(); if (sel.getRangeAt && sel.rangeCount) editorSavedRange = sel.getRangeAt(0); };
+        window.restoreEditorSelection = function() { if (editorSavedRange) { const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(editorSavedRange); } };
+        window.execCmd = function(command, value = null) { document.execCommand(command, false, value); document.getElementById('edit-content').focus(); };
+        window.pickRandomImage = function() { document.getElementById('edit-image').value = `https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop`; };
+        window.insertImagePrompt = async function() {
+            window.saveEditorSelection();
+            const url = await window.showPrompt("Görsel Linkini (URL) yapıştırın:", "");
+            if(url) { window.restoreEditorSelection(); window.execCmd('insertImage', url); }
+        };
+        window.insertYoutube = async function() {
+            window.saveEditorSelection();
+            const url = await window.showPrompt("YouTube Linkini yapıştırın:", "");
+            if(url) {
+                window.restoreEditorSelection();
+                const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([^&]{11})/);
+                if(match && match[1]) window.execCmd('insertHTML', `<iframe src="https://www.youtube.com/embed/${match[1]}" frameborder="0" allowfullscreen></iframe><br>`);
+                else window.showAlert("Hata", "Geçersiz YouTube linki.", true);
+            }
+        };
+
+        // BAŞLANGIÇ
+        fetchInitialData();
+    </script>
+</body>
+</html>
